@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:title="Book Parking"
+            android:titleTextColor="@android:color/white" />
+
+        <!-- Select Location -->
+        <TextView
+            android:id="@+id/tv_location_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:text="Select location from Google Maps"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_select_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location_info"
+            android:text="Select Location" />
+
+        <!-- Vehicle Model -->
+        <EditText
+            android:id="@+id/et_vehicle_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_select_location"
+            android:hint="Enter Vehicle Model"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Vehicle Number -->
+        <EditText
+            android:id="@+id/et_vehicle_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_vehicle_model"
+            android:hint="Enter Vehicle Number"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Vehicle Type -->
+        <EditText
+            android:id="@+id/et_vehicle_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_vehicle_number"
+            android:hint="Enter Vehicle Type (Car/Bike/etc.)"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Date & Time Selection -->
+        <TextView
+            android:id="@+id/tv_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_vehicle_type"
+            android:text="Select Date and Time"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_select_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date_time"
+            android:text="Select Date and Time" />
+
+        <!-- Price per hour -->
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_select_datetime"
+            android:text="Price per hour: ₹50"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <!-- Total Cost -->
+        <TextView
+            android:id="@+id/tv_total_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_price"
+            android:text="Total Cost: ₹0"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_total_cost"
+            android:text="Next" />
+    </RelativeLayout>
+</ScrollView>

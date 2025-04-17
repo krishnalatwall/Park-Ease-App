@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="teal_700">#018786</color> <!-- Button background -->
+    <color name="purple_700">#6200EE</color> <!-- Register link -->
+    <color name="light_grayy">#F5F5F5</color>
+    <color name="dark_grayy">#333333</color>
+    <color name="input_background">#E0F7FA</color> <!-- Optional input field background -->
+    <color name="light_gray">#F5F5F5</color>
+    <color name="mint_green">#A5D6A7</color>
+    <color name="dark_gray">#616161</color>
+    <color name="vibrant_blue">#2196F3</color>
+    <color name="primaryColor">#4CAF50</color> <!-- Green color -->
+    <color name="gray">#E0E0E0</color> <!-- Light gray color -->
+    <color name="teal_100">#B2DFDB</color>
+
+</resources>

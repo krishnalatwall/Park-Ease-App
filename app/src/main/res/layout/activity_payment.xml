@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:title="Payment Method"
+            android:titleTextColor="@android:color/white"/>
+
+        <!-- Progress Indicator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginHorizontal="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Select Payment Method -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Payment Method"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <!-- Cash on Delivery -->
+        <RadioButton
+            android:id="@+id/rb_cod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="₹284 Cash on Delivery"
+            android:padding="10dp" />
+
+        <!-- Pay Online -->
+        <RadioButton
+            android:id="@+id/rb_online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="₹273 Pay Online (Save ₹11)"
+            android:padding="10dp" />
+
+        <!-- Additional Payment Methods -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Payment Options"
+            android:textSize="16sp"
+            android:paddingTop="10dp" />
+
+        <Spinner
+            android:id="@+id/spinner_payment_methods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/payment_methods" />
+
+        <!-- Price Details -->
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="₹284"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp" />
+
+        <!-- Place Order Button -->
+        <Button
+            android:id="@+id/btn_place_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#673AB7"
+            android:padding="10dp"
+            android:text="Booking Now"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

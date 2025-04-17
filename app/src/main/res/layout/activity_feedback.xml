@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_feedback_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We'd love your feedback"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Enter your feedback here..."
+        android:gravity="top"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:inputType="textMultiLine"
+        android:maxLines="5" />
+
+    <Button
+        android:id="@+id/btn_submit_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

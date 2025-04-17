@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms and Privacy Policy"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms of Service:\n\nBy using the ParkEase app, you agree to the following terms and conditions. The content provided is for informational purposes only. ParkEase is not liable for parking slot availability or third-party service performance.\n\n" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy:\n\nYour privacy is important to us. We only collect the necessary data to improve user experience. This includes location for booking, and contact info for support.\n\nWe do not share your personal data with third parties without consent."
+            android:paddingTop="12dp"/>
+    </LinearLayout>
+</ScrollView>

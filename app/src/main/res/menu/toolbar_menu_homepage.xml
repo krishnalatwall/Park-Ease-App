@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_language" android:title="Change Language" />
+    <item android:id="@+id/menu_notifications" android:title="Toggle Notification" />
+    <item android:id="@+id/menu_contact" android:title="Contact Us" />
+    <item android:id="@+id/menu_share" android:title="Share App" />
+    <item android:id="@+id/menu_terms" android:title="Terms and Privacy" />
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/search_hint"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+</menu>
